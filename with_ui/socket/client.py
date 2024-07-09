@@ -9,7 +9,7 @@ from home import *
 
 HEADER = 64
 PORT = 9001
-SERVER = "127.0.0.1"
+SERVER = "10.23.24.127"
 ADDR = (SERVER,PORT)
 FORMAT = 'utf-8'
 DISCONNECT_MSG = "Game Over"
@@ -24,7 +24,7 @@ def closeConn(client):
     print("%-10s %-15s %-10s %-10s %-10s" %("Player No","Name","Rank","Points","Total Time"))
     for i in range(number_players):
         rank_msg = client.recv(4096).decode(FORMAT).split("-")
-        print("%-10s %-15s %-10s %-10s %-10s" %(rank_msg[0],rank_msg[1],rank_msg[2],rank_msg[3],rank_msg[4]))
+        print("%-10s %-15s %-10s %-10s %-10s" %(rank_msg[0],rank_msg[1],rank_msg[2],rank_msg[3]+"/4",rank_msg[4]))
 
     final_msg = client.recv(4096).decode(FORMAT)
     print("---------------------------------------------------------------------------")

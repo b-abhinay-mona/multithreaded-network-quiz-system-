@@ -8,7 +8,7 @@ from getQuestions import *
 # Define const. parameters
 MAX_LEN = 64
 PORT = 9001
-SERVER = "127.0.0.1"
+SERVER = "10.23.24.127"
 ADDR = (SERVER,PORT)
 FORMAT = "utf-8"
 DISCONNECT_MSG = "Game Over"
@@ -151,7 +151,7 @@ def start():
 		client_names.append("player")
 		thread = threading.Thread(target=handle_client,args=(conn,addr))
 		thread.start()
-		if(len(client_list) == NUM_PLAYERS):						# Once we get [NUM_PLAYERS] connection - start the quiz
+		if(len(client_list) == NUM_PLAYERS): # Once we get [NUM_PLAYERS] connection - start the quiz
 			time.sleep(2)
 			start_quiz()
 

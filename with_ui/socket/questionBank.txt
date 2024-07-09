@@ -24,36 +24,36 @@ D
 BEGIN
 -------------------------------------------------------------------------------------------------------------------
 Question:
-What is the capital of Mizoram ?
+What is the capital of India ?
 Options:
-Imphal
-Itanagar
-Correct: Aizawl
+Vizag
+Mumbai
+Correct: Delhi
 Dispur
 
 Question:
-What is the name of our planet ?
+Which of the following is not a function of an Operating System ?
 Options:
-Correct: Earth
-Jupiter
-Mars
-Pluto
+Correct: Data Encryption
+Process Management
+File Management
+Memory Management
 
 Question:
-What is the name of our Galaxy ?
+How many layers are there in TCP/IP model ?
 Options:
-Andromeda
-Nebula
-Messeir 87
-Correct: Milky Way
+6
+7
+4
+Correct: 5
 
 Question:
-What is the nearest star to earth ?
+What is the purpose of the 'ls' command in Unix/Linux ?
 Options:
-Proxima centauri
-Alpha centauri
-Correct: Alpha centauri A
-Betelgeuse
+List all available storage devices
+List all users in the system
+Correct: List all files in a directory
+ List all processes running in the system
 
 END
 ---------------------------------------------------------------------------------------------------------------------
